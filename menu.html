@@ -3,39 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aunty Delite Menu - Explore our delicious African dishes and pastries.">
+    <meta name="description" content="Aunty Delite Menu - Authentic African dishes and confections.">
     <title>Menu | Aunty Delite</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <i class="ph ph-coffee"></i>
-                Aunty Delite
-            </a>
+            <a href="index.html" class="logo"><i class="ph ph-cooking-pot"></i> Aunty Delite</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="menu.html" style="color: var(--color-primary);">Menu</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
             </ul>
             <a href="cart.html" class="desktop-cart"><i class="ph ph-shopping-cart"></i><span class="cart-badge" style="display:none;">0</span></a>
             <a href="contact.html" class="btn btn-primary nav-cta">Contact Us</a>
-            <button class="mobile-menu-btn">
-                <i class="ph ph-list"></i>
-            </button>
+            <button class="mobile-menu-btn"><i class="ph ph-list"></i></button>
         </div>
     </nav>
 
-    <!-- Page Header -->
     <header class="page-header">
         <div class="container">
             <h1>Our Menu</h1>
@@ -43,159 +35,111 @@
         </div>
     </header>
 
-    <!-- Menu Sections -->
-    <div style="background-color: var(--color-bg-alt); padding: 2rem 0;">
-        <div class="container" style="display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; scrollbar-width: none;">
-            <a href="#deals" class="btn btn-outline" style="min-width: max-content;">Deals</a>
-            <a href="#sides" class="btn btn-outline" style="min-width: max-content;">Sides</a>
-            <a href="#drinks" class="btn btn-outline" style="min-width: max-content;">Drinks</a>
-            <a href="#desserts" class="btn btn-outline" style="min-width: max-content;">Desserts</a>
+    <div class="menu-nav-bar">
+        <div class="container">
+            <a href="#deals" class="btn btn-outline menu-nav-btn">Deals</a>
+            <a href="#sides" class="btn btn-outline menu-nav-btn">Sides</a>
+            <a href="#drinks" class="btn btn-outline menu-nav-btn">Drinks</a>
+            <a href="#desserts" class="btn btn-outline menu-nav-btn">Desserts</a>
         </div>
     </div>
 
-    <!-- Deals Section -->
-    <section id="deals" class="section bg-light" style="padding-top: 4rem;">
+    <section id="deals" class="section">
         <div class="container">
-            <h2 style="border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 2rem;">DEALS</h2>
+            <h2 class="menu-section-title">Deals</h2>
             <div class="menu-grid">
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Signature Jollof Deal</h4>
-                            <span class="price">$18</span>
-                        </div>
-                        <p>Smoky tomato rice served with plantains, protein, and a free drink.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Signature Jollof Deal" data-price="18" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Signature Jollof Deal</h4><span class="price">₦18,000</span></div>
+                        <p>Smoky tomato rice served with plantains, protein of choice, and a chilled drink.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Signature Jollof Deal" data-price="18000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
-
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Family Combo Platter</h4>
-                            <span class="price">$35</span>
-                        </div>
-                        <p>A party favorite platter including puff-puff, samosas, spring rolls, and peppered meats.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Family Combo Platter" data-price="35" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Family Combo Platter</h4><span class="price">₦35,000</span></div>
+                        <p>A celebration platter — puff-puff, samosas, spring rolls, and peppered meats for the table.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Family Combo Platter" data-price="35000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sides Section -->
-    <section id="sides" class="section bg-white" style="padding-top: 4rem;">
+    <section id="sides" class="section bg-light">
         <div class="container">
-            <h2 style="border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 2rem;">SIDES</h2>
+            <h2 class="menu-section-title">Sides</h2>
             <div class="menu-grid">
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1596649567946-b25a396264e1?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Suya Skewers</h4>
-                            <span class="price">$12</span>
-                        </div>
-                        <p>Spicy, grilled beef skewers marinated in our special yaji peanut spice blend.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Suya Skewers" data-price="12" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Suya Skewers</h4><span class="price">₦12,000</span></div>
+                        <p>Spiced, grilled beef skewers marinated in our special yaji peanut blend. A Lagos classic.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Suya Skewers" data-price="12000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
-                
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1628294895950-9805252327bc?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Meat Pie / Patties</h4>
-                            <span class="price">$5</span>
-                        </div>
-                        <p>A flaky, golden crust filled with rich, savory minced beef and potatoes.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Meat Pie" data-price="5" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Meat Pie & Patties</h4><span class="price">₦5,000</span></div>
+                        <p>A flaky golden crust filled with rich, savoury minced beef and tender potatoes.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Meat Pie" data-price="5000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Drinks Section -->
-    <section id="drinks" class="section bg-light" style="padding-top: 4rem;">
+    <section id="drinks" class="section">
         <div class="container">
-            <h2 style="border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 2rem;">DRINKS</h2>
+            <h2 class="menu-section-title">Drinks</h2>
             <div class="menu-grid">
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Classic Soda Chiller</h4>
-                            <span class="price">$3</span>
-                        </div>
-                        <p>Ice cold carbonated beverages to wash down that spicy meal.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Classic Soda" data-price="3" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Classic Soda Chiller</h4><span class="price">₦3,000</span></div>
+                        <p>Ice cold carbonated beverages to complement every bite on your table.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Classic Soda" data-price="3000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Desserts Section -->
-    <section id="desserts" class="section bg-white" style="padding-top: 4rem;">
+    <section id="desserts" class="section bg-light">
         <div class="container">
-            <h2 style="border-bottom: 2px solid var(--color-primary); padding-bottom: 0.5rem; margin-bottom: 2rem;">DESSERTS</h2>
+            <h2 class="menu-section-title">Desserts</h2>
             <div class="menu-grid">
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Red Velvet Cake</h4>
-                            <span class="price">$6</span>
-                        </div>
-                        <p>Rich, moist red velvet cake with thick cream cheese frosting.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Red Velvet Cake" data-price="6" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Red Velvet Cake</h4><span class="price">₦6,000</span></div>
+                        <p>Rich, moist red velvet with thick cream cheese frosting. A timeless indulgence.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Red Velvet Cake" data-price="6000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
-
                 <div class="menu-card">
                     <div class="menu-image" style="background: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80') center/cover;"></div>
                     <div class="menu-info">
-                        <div class="menu-title-row">
-                            <h4>Butter Croissants</h4>
-                            <span class="price">$4</span>
-                        </div>
-                        <p>Flaky, golden, and buttery. Perfect anytime.</p>
-                        <button class="btn btn-primary add-to-cart-btn" data-name="Butter Croissants" data-price="4" style="width: 100%; border-radius: var(--border-radius); border: none;">
-                            <i class="ph ph-shopping-cart"></i> ADD TO ORDER
-                        </button>
+                        <div class="menu-title-row"><h4>Butter Croissants</h4><span class="price">₦4,000</span></div>
+                        <p>Flaky, golden, and buttery. Baked fresh each morning — perfect at any hour.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-name="Butter Croissants" data-price="4000"><i class="ph ph-shopping-cart"></i> Add to Order</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-brand">
-                <a href="index.html" class="logo">
-                    <i class="ph ph-coffee"></i>
-                    Aunty Delite
-                </a>
-                <p>A delightful fusion of fresh cafe culture and authentic African cuisine.</p>
+                <a href="index.html" class="logo"><i class="ph ph-cooking-pot"></i> Aunty Delite</a>
+                <p>A celebration of homemade African cuisine and freshly baked confections, served with love.</p>
             </div>
-            
             <div class="footer-links">
-                <h4>Quick Links</h4>
+                <h4>Navigate</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -203,24 +147,17 @@
                     <li><a href="services.html">Catering</a></li>
                 </ul>
             </div>
-            
             <div class="footer-contact">
                 <h4>Contact</h4>
-                <p><i class="ph ph-map-pin"></i> 123 Cafe Avenue, City</p>
-                <p><i class="ph ph-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="ph ph-map-pin"></i> 123 Cafe Avenue, Lagos</p>
+                <p><i class="ph ph-phone"></i> +234 800 000 0000</p>
                 <p><i class="ph ph-envelope"></i> hello@auntydelite.com</p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Aunty Delite. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Aunty Delite. All rights reserved.</p></div>
     </footer>
 
-    <div class="floating-cart">
-        <i class="ph ph-shopping-cart"></i>
-        <span class="cart-badge" style="display:none;">0</span>
-    </div>
-
+    <a href="cart.html" class="floating-cart"><i class="ph ph-shopping-cart"></i><span class="cart-badge" style="display:none;">0</span></a>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
